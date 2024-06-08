@@ -63,7 +63,9 @@ html{
     display: none;
 }
 
-
+.menu-desplegable {
+    display: none;
+  }
 
 /* SECCION I N I C I O */
 .inicio{
@@ -760,8 +762,65 @@ footer .arriba{
     }
 /*estilos para barra de inicio*/
 
-   
-   
+ /* Estilos para el menú hamburguesa en pantalla pequeña */
+.nav-responsive {
+    display: block;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0.5;
+  }
+  
+  #nav ul {
+    display: none;
+  }
+  
+  #nav.active ul {
+    display: block;
+  }
+  
+  #nav.active .nav-responsive {
+    position: fixed;
+    top: 0;
+    right: 0;
+    opacity: 0.9;
+  }
+  
+  #nav.active .nav-responsive i {
+    color: #333;
+  }
+  
+  #nav.active .nav-responsive:hover i {
+    color: #555;
+  }
+  
+  #nav.active ul {
+    width: 40%; /* Ancho menor */
+    background: rgba(255, 255, 255, 0.8); /* Fondo más transparente */
+    position: fixed;
+    top: 60px;
+    left: 57%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 2s ease-in-out; /* Transición más lenta */
+    background-color: #b61c1c;
+    
+  }
+  
+  #nav.active ul li {
+    display: block;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #nav.active ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: #f8f6f6;
+    text-decoration: none;
+  }
+  
+  #nav.active ul li a:hover {
+    background: #6e6b6b;
+  }
+  
 }
 
 

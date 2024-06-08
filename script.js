@@ -3,6 +3,13 @@
 
 
 
+// Función para mostrar u ocultar el menú en pantalla pequeña
+// Función para mostrar u ocultar el menú en pantalla pequeña
+function mostrarOcultarMenu() {
+  var nav = document.getElementById("nav");
+  nav.classList.toggle("active");
+}
+
 
 
 
