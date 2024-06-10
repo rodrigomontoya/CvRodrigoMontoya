@@ -528,18 +528,17 @@ html{
 }
 
 .portfolio .galeria .proyecto {
-    position: relative;
-    width: 300px;  /* Ajusta según tus necesidades */
-    height: 200px; /* Ajusta según tus necesidades */
-    overflow: hidden;
+    width: 300px;  /* Tamaño fijo para cada proyecto */
     margin: 10px;
     cursor: pointer;
+    position: relative;
+    overflow: hidden;
     border: 1px solid #ccc; /* Opcional, para visualizar el contenedor */
 }
 
 .portfolio .galeria .proyecto img {
     width: 100%;
-    height: 100%;
+    height: auto; /* Esto mantiene la proporción de aspecto de la imagen */
     object-fit: cover;
     display: block;
     transition: transform 0.3s;
@@ -586,6 +585,7 @@ a {
 a:hover {
     text-decoration: none;
 }
+
 
 /* SECCION CONTACTO */
 .contacto{
