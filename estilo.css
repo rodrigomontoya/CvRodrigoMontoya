@@ -518,6 +518,11 @@ html{
     text-align: center;
     padding: 20px 0;
 }
+.portfolio a{
+        text-decoration: initial; 
+    
+    
+}
 .portfolio .galeria{
     display: flex;
     flex-wrap: wrap;
